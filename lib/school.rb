@@ -15,6 +15,7 @@ class School
     if @roster.empty?
       @roster[grade] = []
     else
+      @roster[grade] = name
     end
     @roster[grade] << name
   end
