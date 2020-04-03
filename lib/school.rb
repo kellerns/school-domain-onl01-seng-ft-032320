@@ -28,6 +28,7 @@ class School
   def sort
     roster = @roster
     roster.collect do |grade, names|
+      grade.sort
       names.sort
     end
     roster
