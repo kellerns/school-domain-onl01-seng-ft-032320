@@ -32,7 +32,7 @@ class School
     sorted_list = {}
     while i < key_array.length
       sorted_list[key_array[i]] = sort_roster[key_array[i]].sort
-      i =+ 1
+      i += 1
     end
   end
   
