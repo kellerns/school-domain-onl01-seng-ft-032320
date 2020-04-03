@@ -13,11 +13,12 @@ class School
   
   def add_student(name, grade)
     if @roster.empty?
-      @roster[grade] = []
+      @roster[grade] = [name]
+    elsif @roster.keys.include?(grade)
+      @roster[grade] << name
     else
       @roster[grade] = name
     end
-    @roster[grade] << name
   end
   
   def grade(grade)
