@@ -34,6 +34,7 @@ class School
       sorted_list[key_array[i]] = sort_roster[key_array[i]].sort
       i += 1
     end
+    sorted_list
   end
   
   
