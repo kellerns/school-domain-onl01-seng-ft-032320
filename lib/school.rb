@@ -26,13 +26,13 @@ class School
   end
     
   def sort
-    roster = @roster
-    key_hash = roster.keys
-    roster.collect do |grade, names|
-      grade.sort
-      names.sort
+    key_array = @roster.keys.sort
+    i = 0
+    sort_roster = @roster
+    sorted_list = {}
+    while i < key_array.length
+      sorted_list[key_array[i]] = sort_roster[key_array[i]].sort
     end
-    roster
   end
   
   
